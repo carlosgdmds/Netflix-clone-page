@@ -1,0 +1,97 @@
+:root{ 
+	--vermelho:#E50914; /*definir variaveis no css3 */
+	--preto:#141414;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box; /*defini a borda da caixa nao vai passar */
+}
+body{
+	background:var(--preto); /*var para utilizar a variavel*/
+	font-family:'Arial',Times,serif;
+	color:white;
+}
+/*base principal*/
+header .container{
+	display:flex; /*posibilida criar linhas nessa caixa*/
+	flex-direction:row;/*manda os elementos todos para cima*/
+	align-items:center;
+	justify-content:space-between; /*começa no final porem existe outros como start,end*/
+}
+
+header .logo{
+	margin-left:5px;
+	color:var(--vermelho);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size:40px;
+}
+header nav a {
+	text-decoration:none;
+	color:#AAA;
+	margin-right: 10px;/*vai criar um espaçamento entre cada A*/
+}
+header nav a:hover{
+	color:#fff;
+}
+
+/*filme principal*/
+
+.filmeprincipal{
+	font-size:16px;
+	background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/capa-house.jpg");
+	height:400px;
+	background-size:cover;/*vai preencher toda a area*/
+	
+	display:flex;
+	flex-direction:column;/* vai colocar tudo em coluna*/
+	justify-content:center;
+	align-items:flex-start;	/*vai comecar da esquerda*/
+	
+}
+
+.filmeprincipal .descricao{
+	margin-top:10px;
+	margin-bottom:40px;
+
+}
+.titulo{
+	margin-top:15%;
+	font-size:70px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+	background-color:rgba(0,0,0,.50);
+	border:none;
+	color:white;
+	padding:15px 30px;
+	margin-right:15px;
+	
+	cursor:pointer;
+	transition:.3s ease all; /*cuida da parte da transicao de uma animacao a outra */
+}
+.botao:hover{
+	background-color: white;
+	color:black;
+
+}
+.botao i {
+	margin-right:8px;
+}
+.container{
+	margin-left:20px;
+}
+.filmeprincipal .container{
+	width:70%;
+}
+
+.box-filme{
+	height:100%;
+	width:100%;
+	display: block;
+}
+.carrosel-filmes{
+	margin-top:5px;
+}
